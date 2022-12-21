@@ -1,0 +1,48 @@
+Model Metrics File
+
+XGBoost Model
+
+Final Model Features:
+
+# Prepare the train and valid datasets
+dtrain = xgb.DMatrix(train_df[predictors], train_df[target].values)
+dvalid = xgb.DMatrix(valid_df[predictors], valid_df[target].values)
+dtest = xgb.DMatrix(test_df[predictors], test_df[target].values)
+
+#What to monitor (in this case, **train** and **valid**)
+watchlist = [(dtrain, 'train'), (dvalid, 'valid')]
+
+model = xgb.train(params, 
+                dtrain, 
+                MAX_ROUNDS, 
+                watchlist, 
+                early_stopping_rounds=EARLY_STOP, 
+                maximize=True, 
+                verbose_eval=VERBOSE_EVAL)
+Output: 
+[0]	train-auc:0.89296	valid-auc:0.85272
+[50]	train-auc:0.93946	valid-auc:0.88200
+[100]	train-auc:0.94409	valid-auc:0.89079
+[150]	train-auc:0.97695	valid-auc:0.96336
+[200]	train-auc:0.98919	valid-auc:0.98304
+[250]	train-auc:0.99382	valid-auc:0.98509
+[300]	train-auc:0.99570	valid-auc:0.98582
+[331]	train-auc:0.99696	valid-auc:0.98520
+
+
+Parameters and Hyperparameters:
+params = {}
+params['objective'] = 'binary:logistic'
+params['eta'] = 0.039
+params['silent'] = True
+params['max_depth'] = 2
+params['subsample'] = 0.8
+params['colsample_bytree'] = 0.9
+params['eval_metric'] = 'auc'
+params['random_state'] = RANDOM_STATE
+
+
+
+Performance Metrics: 
+roc_auc_score(test_df[target].values, preds)
+Output: 0.978161865569273
