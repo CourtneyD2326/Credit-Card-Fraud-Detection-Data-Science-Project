@@ -32,6 +32,8 @@ The data was read from a CSV file and contained 284807 rows and 31 columns. This
 
 ## EDA 
 
+[02_EDA.ipynb](/../../Credit_Card_Fraud_Detection_Capstone_2/01_Data Wrangling.ipynb)
+
 I explored the data using feature density plots; the following features are evident in terms of the distribution for the two values of Class: Separated distributions: V4, V11 Partial distributions: V12, V14, V18 Similar Distributions: V1, V2, V3, V10.
 
 <img width="262" alt="image" src="https://user-images.githubusercontent.com/85933265/209001774-1bb0bc1f-3861-4618-b782-42ba11d66e09.png">
@@ -46,6 +48,8 @@ Inverse correlations: V1 and V5 with Amount. V3 with Time.
 Though these feature correlations are not extremely notable, it was explored, and the following found that the regression lines for Class 0 have a negative slope and the regression lines for Class 1 have a slightly smaller negative slope. In general, with the exception of Time and Amount, the distribution of the feature for real transactions (values of Class = 0) is centred around 0. And the fraudulent transactions (Class = 1) have a skewed (asymmetric) distribution.
 
 ## Creating Predictive Machine Learning Models 
+
+[01_Data Wrangling.ipynb](/../../Credit_Card_Fraud_Detection_Capstone_2/01_Data Wrangling.ipynb)
 
 For accuracy, I used several machine learning models with a confusion matrix and ROC AUC. Below are the summaries of the models. 
 
