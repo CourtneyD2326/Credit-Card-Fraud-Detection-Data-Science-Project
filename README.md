@@ -1,3 +1,5 @@
+![image](https://user-images.githubusercontent.com/85933265/209010532-077d97d5-a8ba-448e-9c47-79b21d449e34.png)
+
 # Credit Card Fraud Detection System
 For any bank or financial organisation, credit card fraud detection is of utmost importance. Being able to spot potential fraud so that consumers are not billed for goods they haven’t purchased is extremely important. The aim is, therefore, to create a classifier that indicates whether a requested transaction is a fraud or not. Data on the total annual value of fraud losses on debit and credit cards issued in the United Kingdom (UK) from 2002 to 2020, abroad and in the United Kingdom (UK) shows that the total value of annual fraud losses on UK-issued debit and credit cards fluctuated overall during the period under observation, reaching a value of 574.2 million British pounds as of 2020. The smallest value of fraud losses on debit and credit cards occurred in 2011, when credit and debit card fraud losses amounting to 341 million British pounds were recorded (Published by D. Clark, Mar 31, 2022). Based on these statistics, it is evident that credit card fraud is on the rise again.
 
