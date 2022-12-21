@@ -49,7 +49,7 @@ Though these feature correlations are not extremely notable, it was explored, an
 
 ## Creating Predictive Machine Learning Models 
 
-[01_Data Wrangling.ipynb](/../../Credit_Card_Fraud_Detection_Capstone_2/01_Data Wrangling.ipynb)
+[04_Machine_learning_Models.ipynb](https://drive.google.com/file/d/1M5cpPBPwzKcZGRJ6sne3DBRJ2OMulFsy/view?usp=sharing)
 
 For accuracy, I used several machine learning models with a confusion matrix and ROC AUC. Below are the summaries of the models. 
 
