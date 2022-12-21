@@ -22,7 +22,7 @@ My approach to building the classifier is discussed in the following steps:
 
 
 [01_Data Wrangling.ipynb](https://drive.google.com/file/d/19MzW4K9Ertk3FGPczYqM7K06G_-8D6es/view?usp=sharing)
-<div style="display: inline">(https://drive.google.com/file/d/19MzW4K9Ertk3FGPczYqM7K06G_-8D6es/view?usp=sharing</div>
+
 After performing EDA on the dataset, I have found the following trends in the data. 
 Using a bar chart to display the class value with 0 being not fraud and 1 being fraud. Only 492 (or 0.172%) of transaction are fraudulent. That means the data is highly unbalanced with respect with target variable Class.
 
@@ -32,7 +32,7 @@ The data was read from a CSV file and contained 284807 rows and 31 columns. This
 
 ## EDA 
 
-[02_EDA.ipynb](/../../Credit_Card_Fraud_Detection_Capstone_2/01_Data Wrangling.ipynb)
+[02_EDA.ipynb](https://drive.google.com/file/d/1ISfrtbsc9BfejWEJON5uTmVLObWP3Xod/view?usp=sharing)
 
 I explored the data using feature density plots; the following features are evident in terms of the distribution for the two values of Class: Separated distributions: V4, V11 Partial distributions: V12, V14, V18 Similar Distributions: V1, V2, V3, V10.
 
