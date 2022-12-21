@@ -21,7 +21,7 @@ My approach to building the classifier is discussed in the following steps:
 ## Data Wrangling
 
 
-[01_Data Wrangling.ipynb] https://drive.google.com/file/d/19MzW4K9Ertk3FGPczYqM7K06G_-8D6es/view?usp=sharing
+[01_Data Wrangling.ipynb] (https://drive.google.com/file/d/19MzW4K9Ertk3FGPczYqM7K06G_-8D6es/view?usp=sharing)
 
 After performing EDA on the dataset, I have found the following trends in the data. 
 Using a bar chart to display the class value with 0 being not fraud and 1 being fraud. Only 492 (or 0.172%) of transaction are fraudulent. That means the data is highly unbalanced with respect with target variable Class.
